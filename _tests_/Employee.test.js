@@ -1,33 +1,30 @@
-const Employee = require('../lib/Employee.js')
-const { TestResult } = require('@jest/types')
-const Employee = require('../lib/Employee.js')
 const Employee = require('../lib/Employee')
 
-jest.mock('../lib/Employee')
+
 
 test('creates an employee', () => {
-    const employee = new Employee('Mike')
-    expect(employee.name).toEqual(expect.any(String))
-    expect(employee.id).toEqual(expect.any(String))
-    expect(employee.email).toEqual(expect.any(String))
+    const employee = new Employee('Mike', 1, 'boo@gmail.com')
+    expect(employee.name).toBe('Mike')
+    expect(employee.id).toEqual(expect.any(Number))
+    expect(employee.email).toBe('boo@gmail.com')
 })
 
 test('gets name', () => {
-    const employee = new Employee('Mike')
-    expect(employee.getName()).toHavePropery('name')
+    const employee = new Employee('Mike', 1, 'boo@gmail.com')
+    expect(employee.getName()).toEqual(expect.any(String))
 })
 
 test('gets id', () => {
-    const employee = new Employee('Mike')
-    expect(employee.getId()).toHavePropery('id')
+    const employee = new Employee('Mike', 1, 'boo@gmail.com')
+    expect(employee.getId()).toEqual(expect.any(Number))
 })
 
 test('gets email', () => {
-    const employee = new Employee('Mike')
-    expect(employee.getEmail()).toHavePropery('email')
+    const employee = new Employee('Mike', 1, 'boo@gmail.com')
+    expect(employee.getEmail()).toEqual(expect.any(String))
 })
 
 test('gets role', () => {
-    const employee = new Employee('Mike')
-    expect(employee.getRole()).toHavePropery('role')
+    const employee = new Employee('Mike', 1, 'boo@gmail.com')
+    expect(employee.getRole()).toBe('Employee')
 })
