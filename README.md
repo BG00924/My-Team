@@ -36,5 +36,5 @@ For questions please send me an email at:
 
 ## Preview
 
-[Overview of My Team](./assets/My-Team-Example.JPG)
+![Overview of My Team](./assets/My-Team-Example.JPG)
 
