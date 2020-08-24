@@ -42,7 +42,7 @@ const generateCards = teamArr => {
                         <div class="card-content">
                             <div class="content">
                                 <ul>
-                                    <li>ID: ${id}</li>
+                                    <li>ID: ${id} </li>
                                     <li>Email: <a href="mailto:${email}" target="_top">${email}</a></li>
                                     <li>Office Number: ${officeNumber}</li>
                                 </ul>
@@ -66,7 +66,7 @@ const generateCards = teamArr => {
                                 <ul>
                                     <li>ID: ${id} </li>
                                     <li>Email: <a href="mailto:${email}" target="_top">${email}</a></li>
-                                    <li>GitHub: ${github}</li>
+                                    <li>GitHub: <a href="https://github.com/${github}">${github}</a></li>
                                 </ul>
                             </div>
                         </div>

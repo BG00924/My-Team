@@ -66,7 +66,7 @@ const promptUserManager = () => {
     .then(answers => {
         const manager = new Manager(
             answers.nameManager,
-            answers.idManger,
+            answers.idManager,
             answers.emailManager,
             answers.numberManager
         )
